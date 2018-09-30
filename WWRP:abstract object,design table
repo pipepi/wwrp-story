@@ -39,13 +39,19 @@ WWRP四大主体：
 （表前缀批注：
   {p_:person,e_:event,
    o_:out,c_:coin}）
+p_self{
+  id:1,
+  parent_id:1,
+  name:"david"
+}
 p_grp:{
   id:1,
   parent_id:0,
   name:"三人组"
 }
 p_grp_member{
-  addr:"0xaaaa",
+  id:1,
+  p_id:1,
   grp_id:1
 }
 e_self:{
@@ -60,6 +66,9 @@ o_self:{
 }
 c_self:{
   id:1,
+  parent_id:0,
+  symbol:"BTC",
+  node_conf:"{"host":"localhost","port":8332,"rpcuser":"wwrp"}";
   addr:"0xbbbb"
 }
             
