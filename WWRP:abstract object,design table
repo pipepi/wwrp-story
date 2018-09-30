@@ -53,7 +53,7 @@ e_self:{
   parent_id:0,
   name:"模拟经营Dapp"
 }
-o_out:{
+o_self:{
   id:1,
   e_id:1,
   name:"柚子"
